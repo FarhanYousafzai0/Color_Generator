@@ -52,7 +52,8 @@ setError(false)
           <button
           onClick={GeneratorColors}
             type="submit"
-            className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl shadow-xl hover:opacity-90 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            onKeyDown={(e)=>e.key === "Enter" && GeneratorColors()}
+            className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer text-white font-bold rounded-xl shadow-xl hover:opacity-90 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
           >
             🚀 Generate
           </button>
